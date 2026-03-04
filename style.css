@@ -55,11 +55,14 @@ h2{
 
 
 .mini-nav{
-    margin: 10px 15px;
-    padding: 8px;
+    padding: 6px 10px;
     border: 1px dashed #888;
-    display: inline-block;
     background: #fafafa;
+    position: fixed;   /* reste visible */
+    top: 10px;
+    right: 15px;       /* positionnée à droite */
+    width: auto;       /* largeur minimale */
+    font-size: 13px;
 }
 
 .mini-nav span{
