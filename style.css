@@ -1,0 +1,170 @@
+/* Evite les dépassements de largeur à cause des padding/bordures */
+*{
+    box-sizing: border-box;
+}
+
+/* Empêche le scroll horizontal de la page */
+html{
+    overflow-x: hidden;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+main{
+    padding: 15px;
+}
+
+h1{
+    margin: 0;
+    font-size: 22px;
+}
+
+h2{
+    margin-top: 25px;
+    font-size: 18px;
+}
+
+
+.haut-page{
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.haut-page img{
+    vertical-align: middle;
+}
+
+.haut-5w{
+    text-align: right;
+}
+
+.haut-5w p{
+    margin: 2px 0;
+    font-size: 14px;
+    color: #444;
+}
+
+
+.mini-nav{
+    margin: 10px 15px;
+    padding: 8px;
+    border: 1px dashed #888;
+    display: inline-block;
+    background: #fafafa;
+}
+
+.mini-nav span{
+    font-size: 14px;
+    margin-right: 6px;
+}
+
+.mini-nav a{
+    margin-right: 8px;
+    text-decoration: none;
+    padding: 3px 8px;
+    border: 1px solid #bbb;
+    color: #222;
+    font-size: 14px;
+}
+
+.mini-nav a:hover{
+    background: #eee;
+}
+
+
+table{
+    border-collapse: collapse;
+    margin: 10px 0 25px 0;
+    width: 100%;
+    max-width: 900px;
+}
+
+caption{
+    text-align: left;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+th, td{
+    border: 1px solid #aaa;
+    padding: 6px;
+    text-align: center;
+    font-size: 14px;
+}
+
+thead th{
+    background: #f1f1f1;
+}
+
+
+#exo4 table{
+    border: 2px dashed #666;      /* bordure extérieure */
+    width: auto;                  /* évite d'étirer la table */
+    max-width: none;
+}
+
+#exo4 td{
+    font-family: "Courier New", monospace; /* rendu type tableau ASCII */
+    width: 28px;
+    height: 28px;
+    padding: 0;
+    border: 2px solid #666;       /* bordures plus marquées */
+    background: #fff;
+    vertical-align: middle;
+}
+
+/* Couleurs de caractères (comme sur l'image) */
+#exo4 td.chiffre{
+    color: #c40000; /* rouge */
+    font-weight: bold;
+}
+
+#exo4 td.majuscule{
+    color: #1a8f1a; /* vert */
+    font-weight: bold;
+}
+
+#exo4 td.minuscule{
+    color: #1a3cff; /* bleu */
+    font-weight: bold;
+}
+
+/* Légende sous la table (si tu utilises <caption>) */
+#exo4 caption{
+    font-style: italic;
+    font-weight: normal;
+}
+
+footer{
+    border-top: 1px solid #ddd;
+    padding: 12px 15px;
+    margin-top: 30px;
+    background: #fafafa;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Le conteneur interne n'a pas besoin de width:100% */
+.bas-5w{
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.bas-5w p{
+    margin: 0;
+    font-size: 13px;
+    color: #444;
+}
